@@ -16,6 +16,8 @@ node('wfh') {
     stage('Test image') {
         
         app.inside {
+	    sh 'pwd'
+	    sh 'whoami'
             echo "Tests passed"
         }
     }
