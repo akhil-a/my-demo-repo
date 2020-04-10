@@ -36,6 +36,6 @@ node('wfh') {
 }
 node {
 	stage('trial') {
-		echo "Hi"
+		echo "Hi Hello"
 	}
 }
