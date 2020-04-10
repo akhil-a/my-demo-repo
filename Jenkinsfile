@@ -31,3 +31,8 @@ node('wfh') {
                 echo "Trying to Push Docker Build to DockerHub"
     }
 }
+node {
+	stage('trial') {
+		echo "Hi"
+	}
+}
