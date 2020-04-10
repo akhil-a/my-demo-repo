@@ -1,4 +1,5 @@
 node {
+    agent { node { label 'wfh' } } 
     def app
 
     stage('Clone repository') {
