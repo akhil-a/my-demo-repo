@@ -16,10 +16,11 @@ node('wfh') {
     stage('Test image') {
         
         app.inside {
-	    sh 'pwd'
-	    sh 'whoami'
             echo "Tests passed"
         }
+	docker.image('akhilanil10/test_alpine1:latest').inside {
+		sh 'pwd'
+	}
     }
 
     stage('Push image') {
