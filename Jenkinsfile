@@ -1,5 +1,4 @@
-node {
-    label wfh
+node('wfh') {
     def app
 
     stage('Clone repository') {
